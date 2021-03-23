@@ -18,6 +18,8 @@ public class BookStore {
         Book book2 = new Book("Hobbit2", "Tolkin", 1937);
         Book book3 = new Book("Hobbit3", "Tolkin", 1937);
         Book book4 = new Book("Kolobok", "Narod", 1701);
+        Book book5 = new Book("Marcian", "Narod", 2010);
+
 
         addBook(bookList, book2);
         addBook(bookList, book3);
