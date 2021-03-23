@@ -9,36 +9,24 @@ public class Book {
     private int editionYear;
     private int bookID;
 
-    public int getBookID() {
-
-        return bookID;
-    }
-
-    public String getBookAuthor() {
-        return BookAuthor;
-    }
-
-    public void setBookAuthor(String bookAuthor) {
-        BookAuthor = bookAuthor;
-    }
 
     public Book(String bookName, String bookAuthor, int editionYear, int bookPrice) {
         this.bookName = bookName;
         this.BookAuthor = bookAuthor;
         this.bookPrice = bookPrice;
         this.editionYear = editionYear;
-        this.bookID =++count;
+        this.bookID = ++count;
     }
 
     public Book(String bookName, String BookAuthor, int editionYear) {
         this.bookName = bookName;
         this.BookAuthor = BookAuthor;
         this.editionYear = editionYear;
-        this.bookID =++count;
+        this.bookID = ++count;
     }
 
     public Book() {
-        this ("some book", "some Author", 2000);
+        this("some book", "some Author", 2000);
         bookID++;
     }
 
@@ -65,5 +53,18 @@ public class Book {
 
     public void setEditionYear(int editionYear) {
         this.editionYear = editionYear;
+    }
+
+    public int getBookID() {
+
+        return bookID;
+    }
+
+    public String getBookAuthor() {
+        return BookAuthor;
+    }
+
+    public void setBookAuthor(String bookAuthor) {
+        BookAuthor = bookAuthor;
     }
 }
