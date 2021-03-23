@@ -1,4 +1,4 @@
-package com.skillfactory.module4.bookstore;
+package com.skillfactory.module5.bookstore;
 
 public class BookStore {
     public static void main(String[] args) {
