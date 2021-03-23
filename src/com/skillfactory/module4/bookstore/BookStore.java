@@ -24,6 +24,7 @@ public class BookStore {
         addBook(bookList, book2);
         addBook(bookList, book3);
         addBook(bookList, book4);
+        addBook(bookList, book5);
 
         printAllBookList(bookList);
 
