@@ -98,7 +98,7 @@ public class BookStore {
             if (bookList[i] != null && bookList[i].getBookName().contains(book)) {
                 count++;
                 System.out.printf("книга №%d: название: \"%s\", автор: \"%s\", год издания: %dг., ID книги -  %d\n",
-                        count, bookList[i].getBookName(), bookList[i].getBookAuthor(), bookList[i].getEditionYear(), bookList[i].getBookID());
+                        count, bookList[i].getBookName(), bookList[i].getBookAuthor2(), bookList[i].getEditionYear(), bookList[i].getBookID());
             }
         }
     }

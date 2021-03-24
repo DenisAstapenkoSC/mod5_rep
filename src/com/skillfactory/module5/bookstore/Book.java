@@ -4,23 +4,23 @@ public class Book {
 
     private static int count = 0;
     private String bookName;
-    private String BookAuthor;
+    private String BookAuthor2;
     private int bookPrice;
     private int editionYear;
     private int bookID;
 
 
-    public Book(String bookName, String bookAuthor, int editionYear, int bookPrice) {
+    public Book(String bookName, String bookAuthor2, int editionYear, int bookPrice) {
         this.bookName = bookName;
-        this.BookAuthor = bookAuthor;
+        this.BookAuthor2 = bookAuthor2;
         this.bookPrice = bookPrice;
         this.editionYear = editionYear;
         this.bookID = ++count;
     }
 
-    public Book(String bookName, String BookAuthor, int editionYear) {
+    public Book(String bookName, String BookAuthor2, int editionYear) {
         this.bookName = bookName;
-        this.BookAuthor = BookAuthor;
+        this.BookAuthor2 = BookAuthor2;
         this.editionYear = editionYear;
         this.bookID = ++count;
     }
@@ -60,11 +60,11 @@ public class Book {
         return bookID;
     }
 
-    public String getBookAuthor() {
-        return BookAuthor;
+    public String getBookAuthor2() {
+        return BookAuthor2;
     }
 
-    public void setBookAuthor(String bookAuthor) {
-        BookAuthor = bookAuthor;
+    public void setBookAuthor2(String bookAuthor2) {
+        BookAuthor2 = bookAuthor2;
     }
 }
