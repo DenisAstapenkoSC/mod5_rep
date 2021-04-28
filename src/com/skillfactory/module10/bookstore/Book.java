@@ -1,4 +1,6 @@
-package com.skillfactory.module5.bookstore;
+package com.skillfactory.module10.bookstore;
+
+import java.util.Calendar;
 
 public class Book {
 
@@ -8,6 +10,7 @@ public class Book {
     private int bookPrice;
     private int editionYear;
     private int bookID;
+    private Calendar dateOfReceipt;
 
 
     public Book(String bookName, String bookAuthor2, int editionYear, int bookPrice) {
@@ -16,6 +19,8 @@ public class Book {
         this.bookPrice = bookPrice;
         this.editionYear = editionYear;
         this.bookID = ++count;
+
+
     }
 
     public Book(String bookName, String BookAuthor2, int editionYear) {
@@ -23,11 +28,13 @@ public class Book {
         this.BookAuthor2 = BookAuthor2;
         this.editionYear = editionYear;
         this.bookID = ++count;
+
     }
 
     public Book() {
         this("some book", "some Author", 2000);
         bookID++;
+
     }
 
 
@@ -51,13 +58,15 @@ public class Book {
         return editionYear;
     }
 
-    public void setEditionYear(int editionYear) {
-        this.editionYear = editionYear;
-    }
 
     public int getBookID() {
 
         return bookID;
+    }
+
+    public Calendar getDateOfReceipt () {
+
+        return this.dateOfReceipt;
     }
 
     public String getBookAuthor2() {
@@ -66,5 +75,17 @@ public class Book {
 
     public void setBookAuthor2(String bookAuthor2) {
         BookAuthor2 = bookAuthor2;
+    }
+
+    public void setDateOfReceipt (){
+
+        this.dateOfReceipt = Calendar.getInstance();
+
+    }
+
+    public void setDateOfReceipt (int year, int month, int day){
+
+        this.dateOfReceipt.set(year, month-1, day);
+
     }
 }
